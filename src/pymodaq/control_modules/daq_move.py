@@ -122,6 +122,8 @@ class DAQ_Move(ParameterManager, ControlModule):
         self._current_value = DataActuator(title)
         self._target_value: DataActuator(title)
         self._relative_value: DataActuator(title)
+        # self._target_value: DataActuator(title)
+        # self._relative_value: DataActuator(title)
 
         self._refresh_timer = QTimer()
         self._refresh_timer.timeout.connect(self.get_actuator_value)
